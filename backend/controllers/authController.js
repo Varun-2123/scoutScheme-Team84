@@ -60,6 +60,13 @@ exports.updateProfile = async (req, res) => {
   fields.forEach(f => { if (req.body[f] !== undefined) updates[f] = req.body[f]; });
   updates.profileDone = true;
 
-  const user = await User.findByIdAndUpdate(req.user.id, updates, { new: true }).select('-password');
+  const user = await User.findByIdAndUpdate(
+  req.user.id,
+  updates,
+  {
+    returnDocument: 'after',
+    runValidators: true
+  }
+).select('-password');
   res.json(user);
 };
