@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=DM+Sans:wght@400;500&display=swap');
+
+.auth-page {
+  min-height: calc(100vh - 68px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #f8f4ff 0%, #fff 70%);
+  padding: 2rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.auth-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  border: 1.5px solid #ede8ff;
+  box-shadow: 0 8px 40px rgba(91,43,219,0.08);
+}
+
+.auth-header { margin-bottom: 2rem; text-align: center; }
+.auth-header h1 { font-family: 'Sora', sans-serif; font-size: 1.6rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.4rem; }
+.auth-header p { color: #888; font-size: 0.92rem; }
+
+.auth-error {
+  background: #fff0f0;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.auth-form { display: flex; flex-direction: column; gap: 1.1rem; }
+
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-group label { font-size: 0.85rem; font-weight: 600; color: #444; }
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e8e0ff;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.2s;
+  background: #fdfcff;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus { border-color: #5b2bdb; background: #fff; }
+.form-group input::placeholder { color: #bbb; }
+
+.auth-btn {
+  margin-top: 0.5rem;
+  padding: 0.85rem;
+  background: #5b2bdb;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(91,43,219,0.25);
+}
+
+.auth-btn:hover:not(:disabled) { background: #4520b0; transform: translateY(-1px); }
+.auth-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+.auth-switch { text-align: center; margin-top: 1.5rem; font-size: 0.88rem; color: #888; }
+.auth-switch a { color: #5b2bdb; font-weight: 600; text-decoration: none; }
+.auth-switch a:hover { text-decoration: underline; }

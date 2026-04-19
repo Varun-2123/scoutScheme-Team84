@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap');
+
+.home { font-family: 'DM Sans', sans-serif; }
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+  background: linear-gradient(160deg, #f8f4ff 0%, #fff 60%);
+  border-bottom: 1px solid #f0eeff;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: #f0eeff;
+  color: #5b2bdb;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  letter-spacing: -1px;
+}
+
+.hero-highlight { color: #5b2bdb; }
+
+.hero-subtitle {
+  max-width: 580px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.btn-primary {
+  padding: 0.8rem 1.8rem;
+  background: #5b2bdb;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(91,43,219,0.3);
+}
+
+.btn-primary:hover {
+  background: #4520b0;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  padding: 0.8rem 1.8rem;
+  background: transparent;
+  color: #5b2bdb;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1.5px solid #d4c5f9;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover { background: #f4f1ff; }
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat { display: flex; flex-direction: column; align-items: center; }
+.stat-num { font-family: 'Sora', sans-serif; font-size: 1.6rem; font-weight: 700; color: #1a1a2e; }
+.stat-label { font-size: 0.82rem; color: #888; margin-top: 0.1rem; }
+.stat-divider { width: 1px; height: 36px; background: #e0d8f8; }
+
+.how-it-works { padding: 5rem 2rem; text-align: center; background: #fff; }
+
+.section-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.section-sub { color: #888; font-size: 1rem; margin-bottom: 3rem; }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background: #fafafa;
+  border: 1.5px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.step-card:hover {
+  border-color: #d4c5f9;
+  box-shadow: 0 4px 20px rgba(91,43,219,0.08);
+  transform: translateY(-2px);
+}
+
+.step-num { font-family: 'Sora', sans-serif; font-size: 0.75rem; font-weight: 700; color: #c4b5fd; letter-spacing: 1px; margin-bottom: 0.75rem; }
+.step-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.step-card h3 { font-family: 'Sora', sans-serif; font-size: 1.05rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.5rem; }
+.step-card p { font-size: 0.9rem; color: #777; line-height: 1.6; }
+
+.categories { padding: 5rem 2rem; background: #f8f4ff; text-align: center; }
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.cat-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1.5px solid #ede8ff;
+  transition: all 0.2s;
+}
+
+.cat-card:hover { border-color: #5b2bdb; box-shadow: 0 4px 16px rgba(91,43,219,0.1); }
+.cat-icon { font-size: 1.8rem; }
+.cat-label { font-size: 0.82rem; font-weight: 600; color: #444; text-align: center; }
+
+.cta-section { padding: 5rem 2rem; text-align: center; background: #1a1a2e; color: #fff; }
+.cta-section h2 { font-family: 'Sora', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 1rem; }
+.cta-section p { max-width: 520px; margin: 0 auto 2rem; color: #aaa; line-height: 1.7; }
